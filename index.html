@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <title>Circle Slider</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container ">
+      <img src="images/Pizza_Hut_logo.svg.png" alt="pizzahut" width="30" height="24">
+      </button>
+      <div class="collapse navbar-collapse justify-content-center itm" id="navbarSupportedContent">
+        <ul class="nav justify-content-center ">
+          <li class="nav-item ">
+            <a class="nav-link active fs-4 text-dark fw-bold" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 text-dark fw-bold" href="#">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 text-dark fw-bold" href="#">About Us</a>
+          </li>
+          <li class="nav-item fs-4">
+            <a class="nav-link text-dark fw-bold" href="#">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="slideshow">
+    <div class="carousel">
+      <div class="slide active">
+        <img src="images/01.png" />
+      </div>
+      <div class="slide">
+        <img src="images/02.png" />
+      </div>
+      <div class="slide">
+        <img src="images/03.png" />
+      </div>
+      <div class="slide">
+        <img src="images/04.png" />
+      </div>
+    </div>
+    <div class="container ms-5">
+      <h1 class="head text-left p-0 mb-5"></h1>
+      <div class="row ms-3">
+        <p>The restaurant brand offers an exciting menu consisting of its signature pizzas, appetizers, pastas, desserts
+          and beverages.</p>
+      </div>
+      <div class="controls">
+        <a href="#" data-index="1" class="active">
+          <img src="images/01.png" alt="Pizza 01"/>
+        </a>
+        <a href="#" data-index="2">
+          <img src="images/02.png" alt="Pizza 02"/>
+        </a>
+        <a href="#" data-index="3">
+          <img src="images/03.png" alt="Pizza 03"/>
+        </a>
+        <a href="#" data-index="4">
+          <img src="images/04.png" alt="Pizza 04"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

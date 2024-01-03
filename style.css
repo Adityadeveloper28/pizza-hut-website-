@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.slideshow {
+    height: 82vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.carousel {
+    width: 71rem;
+    height: 80rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 17%;
+    left: 31%;
+    transform: rotate(100deg);
+    flex-shrink: 0;
+    transition: rotate 1s ease 0s;
+}
+
+.slide {
+    width: 20rem;
+    position: absolute;
+}
+
+.slide:nth-child(1) {
+    bottom: -20rem;
+}
+
+.slide:nth-child(2) {
+    left: -20rem;
+}
+
+.slide:nth-child(3) {
+    top: -20rem;
+}
+
+.slide:nth-child(4) {
+    right: -20rem;
+}
+
+.slide.active img {
+    transform: scale(2.5);
+    transition: transform 0.5s 0.5s;
+    
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.controls {
+    position: sticky;
+    bottom: 5rem;
+}
+
+.controls a {
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10rem;
+    transition: background-color 1s;
+}
+
+.controls a.active {
+    transform: scale(1.3);
+    transition: ease-out 1s;
+}
+
+.controls img {
+    width: 10rem;
+    filter: drop-shadow(3px 5px 4px #812404);
+    margin: 1rem;
+}
+
+a.nav-link {
+    margin: 4rem;
+
+}
+
+.container img {
+    width: 10rem;
+    height: auto;
+}
+
+.navbar-expand-lg {
+    position: relative;
+    top: 1rem;
+}
+
+p {
+    margin-top: 0;
+    width: 63%;
+    font-size: 1.8rem;
+    /* display: flex; */
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.head {
+    font-size: 10rem;
+    font-family: fantasy;
+    transition: opacity 3s ease-out;
+}
